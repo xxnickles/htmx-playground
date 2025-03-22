@@ -1,0 +1,13 @@
+﻿@inherits LayoutComponentBase
+
+<div class="drawer lg:drawer-open">
+    <input id="drawer" type="checkbox" class="drawer-toggle"/>
+    <div class="drawer-content flex flex-col">
+        <NavBar/>
+        <main class="p-4">
+            @Body
+        </main>
+
+    </div>
+    <SideMenu/>
+</div>
