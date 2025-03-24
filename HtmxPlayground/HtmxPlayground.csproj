@@ -53,4 +53,8 @@
       <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Azure.SignalR" Version="1.30.2" />
+    </ItemGroup>
+
 </Project>

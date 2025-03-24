@@ -1,4 +1,5 @@
 using HtmxPlayground.Features;
+using HtmxPlayground.Features.HtmxEvents;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,5 +23,6 @@ app.UseAntiforgery();
 
 app.MapStaticAssets();
 app.MapRazorComponents<App>();
+app.MapHub<EventsHub>("/events");
 
 app.Run();
